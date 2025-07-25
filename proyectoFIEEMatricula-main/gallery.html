@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de fotos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIEE</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Proyecto Matrícula FIEE 26-1</a></li>
+                <li class="social-icon-mobile">
+                    <a href="https://web.facebook.com/watch/?v=1388140552427752&rdid=elVnWwukBmwq3izs" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+            <div class="social-icon">
+                <a href="https://web.facebook.com/watch/?v=1388140552427752&rdid=elVnWwukBmwq3izs" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <h1><span>Galería de Fotos</span></h1>
+
+    <div class="gallery-grid">
+  <!-- Las imágenes se agregarán aquí manualmente -->
+        <img src="image/gal1_1.webp" alt="gal1_1">
+        <img src="image/gal1_2.webp" alt="gal1_2">
+        <img src="image/gal2_2.jpg" alt="gal2_2">
+        <img src="image/gal2_3.jpg" alt="gal2_3">
+        <img src="image/gal2_4.jpg" alt="gal2_4">
+        <img src="image/gal2_5.jpg" alt="gal2_5">
+        <img src="image/gal2_6.jpg" alt="gal2_6">
+        <img src="image/gal2_7.jpg" alt="gal2_7">
+        <img src="image/gal3_1.png" alt="gal3_1">
+        <img src="image/gal3_2.png" alt="gal3_2">
+        <img src="image/gal3_3.png" alt="gal3_3">
+        <img src="image/gal3_4.png" alt="gal3_4">
+        <img src="image/gal3.png" alt="gal3">
+    </div>
+    <!-- Modal para mostrar imagen grande -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModalContent">
+    </div>
+</body>
+</html>
