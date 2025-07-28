@@ -303,6 +303,60 @@ nav .logo {
     max-width: 800px; /* Ancho máximo para los párrafos de contenido */
 }
 
+.login-content {
+    padding: 150px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 70vh;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center; /* Centrar todo el texto y elementos de bloque por defecto */
+}
+
+.login-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 15px;
+    display: inline-block; /* Mantener inline-block para que el borde inferior se ajuste al texto */
+    width: auto;
+}
+
+.login-content h3 { /* Estilo para los subtítulos dentro de las secciones */
+    font-size: 2.1rem;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 6px;
+    text-align: center; /* Centrar subtítulos */
+}
+
+.login-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify; /* Justificar párrafos */
+    margin-bottom: 20px;
+    max-width: 800px; /* Ancho máximo para los párrafos de contenido */
+}
+
+.login-content .form-group li {
+    padding: 7px;
+    font-size: 1rem;
+    line-height: 1.8;
+    list-style-type: none;
+    text-align: justify; /* Justificar párrafos */
+    margin-bottom: 20px;
+    max-width: 800px; /* Ancho máximo para los párrafos de contenido */
+}
+
 /* Contenedor del carrusel de noticias (si aplica) */
 .news-carousel-container {
     display: flex;
@@ -804,7 +858,7 @@ footer {
     gap: 15px;
     padding: 100px 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10 auto;
 }
 
 .gallery-grid img {
@@ -856,4 +910,223 @@ footer {
 
 .close:hover {
     color: #ffd700;
+}
+
+.section-content {
+    padding: 30px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+.header {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 5.rem 2.5rem;
+  align-items: start;
+  background-color: #fdfcfc;
+}
+
+.chat-sidebar {
+  background-color: #101030;
+  color: #fff;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+}
+
+.chat-sidebar h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.chat-log {
+  background-color: #29293e;
+  height: 300px;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.chat-message {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  max-width: 75%;
+  word-wrap: break-word;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.user-message {
+  background-color: #007acc;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.assistant-message {
+  background-color: #555;
+  color: #eee;
+  align-self: flex-start;
+}
+
+.chat-input-area {
+  display: flex;
+}
+
+#chat-input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+}
+
+#send-btn {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.content-block {
+  background-color: #722626;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-block h2 {
+  padding: 0.1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #212121;
+  color: #ccc;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.right-sidebar {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  margin: 6px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  box-shadow: inset 8 0 3px rgba(200, 21, 21, 0.05);
+}
+
+.right-sidebar h2{
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.sidebar-buttons {
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+  max-width: 100%;
+  gap: 0.1rem;
+}
+
+.sidebar-buttons li {
+  margin-bottom: 0.8rem;
+}
+
+.sidebar-buttons button {
+  margin: 0.4px 0;
+  padding: 10px 85px;
+  
+  background-color: #004a8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.5 ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.sidebar-buttons button:hover {
+  background-color: #00336b;
+}
+
+.main-content {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-block {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5 rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }

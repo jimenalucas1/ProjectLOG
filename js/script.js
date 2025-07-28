@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     const header = document.querySelector('header');
     const sections = document.querySelectorAll('main section');
@@ -113,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Asignar listener al botón para ocultar el detalle
     closeDetailBtn.addEventListener('click', hideNewsDetail);
 
+//========================= CUARENTENA ====================================================
     // Lógica para mostrar/ocultar el botón de "Volver arriba"
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
@@ -216,23 +216,3 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
     });
-
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Esto impide el comportamiento por defecto
-
-        const correo = document.getElementById("username").value.trim();
-        const clave = document.getElementById("password").value.trim();
-
-        const credencialesValidas = {
-            "usuario1@correo.com": "clave123",
-            "jose@iot.dev": "sensor789"
-        };
-
-        if (credencialesValidas[correo] === clave) {
-            window.location.href = "home.html"; // Redirección controlada
-        } else {
-            alert("Correo o contraseña incorrecta.");
-        }
-    });
-
-});

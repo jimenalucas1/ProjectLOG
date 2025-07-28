@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Matrícula FIEE</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistant - Proyecto Matrícula</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">FIEE</div>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            
-            <ul class="nav-links">
-                <li><a href="#proyecto-matricula-fiee-26-1">Proyecto Matrícula FIEE 26-1</a></li>
-                <li><a href="newsletter.html">Noticias</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-                <li><a href="#preguntas">Preguntas</a></li>
-                <li><a href="#sugerencias">Sugerencias</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li class="social-icon-mobile">
-                    <a href="login.html" target="_blank" class="login-btn-header">Iniciar sesión</a>
-                </li>
-            </ul>
-            <div class="social-icon">
-                <a href="login.html" target="_blank" class="login-btn-header">Iniciar sesión</a>
-            </div>
-        </nav>
-    </header>
+  <!--<header class="header">
+    <h1>Matricula FIEE</h1>
+    <p>Descubre información académica, matrícula inteligente y más.</p>
+    <ul class="nav-links">
+        <li><a href="index.html">Cerrar sesión</a></li>
+    </ul>  
+  </header>-->
 
-    <main>
-        <section id="hero" class="section-full-height">
-            <img src="image/fondoAWS.jpg" alt="Fondo del sistema de matrícula" class="background-image">
-            <div class="hero-content">
-                <h1>BIENVENIDO A LA HOME PAGE</h1>
-                <p>EN PROGRESO - Proximamente...</p>
-            </div>
-        </section>
+  <header>
+    <nav>
+      <h2>Matricula FIEE</h2>
+      <p>Descubre información académica, matrícula inteligente y más.</p>
+      <ul class="nav-links">
+        <li><a href="index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+  </header>
 
-        <section id="proyecto-matricula-fiee-26-1" class="section-content">
-            <h2>Proyecto matrícula FIEE 26-1</h2>
-            <p>El Proyecto Matrícula FIEE 26-1 es una iniciativa ambiciosa que busca modernizar y simplificar el proceso de registro académico. Utilizando algoritmos de Inteligencia Artificial, el sistema puede recomendar horarios y cursos basándose en el historial académico del estudiante, sus preferencias y la disponibilidad de cupos. La infraestructura en la nube de Amazon Web Services (AWS) proporciona la robustez necesaria para manejar un gran volumen de usuarios y datos, asegurando un rendimiento óptimo y una experiencia sin interrupciones. Esto permite a los estudiantes completar su matrícula de forma rápida y sencilla, reduciendo los tiempos de espera y los errores manuales.</p>
-            <p>Además, la plataforma está diseñada para ser intuitiva y accesible desde cualquier dispositivo, facilitando a los estudiantes la gestión de sus cursos y su progreso académico. Nuestro objetivo es transformar la matrícula en un proceso inteligente y sin estrés, liberando tiempo valioso para que los estudiantes se enfoquen en su aprendizaje y desarrollo.</p>
-        </section>
+  <main class="main-layout">
+    <!-- Chat sidebar -->
+    <aside class="chat-sidebar">
+      <h2>Asistente Virtual</h2>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Escribe tu consulta aquí..." />
+        <button id="send-btn">Enviar</button>
+      </div>
+    </aside>
 
-    </main>
+    <!-- Right sidebar: Navegación secundaria -->
+    <aside class="right-sidebar">
+      <h2>Panel de Navegación</h2>
+        <ul class="sidebar-buttons">
+          <li><button onclick="navigate('info')">Mi Información</button></li>
+          <li><button onclick="navigate('matricula')">Matrícula</button></li>
+          <li><button onclick="navigate('reportes')">Reportes</button></li>
+        <li><button onclick="navigate('plan')">Plan de Estudios</button></li>
+        <li><button onclick="navigate('tutoriales')">Manuales y Tutoriales</button></li>
+        </ul>
+      </aside>
     
-    <button id="scrollToTopBtn" title="Volver arriba">↑</button>
+      <!-- Contenido principal debajo de las barras laterales -->
+    <section class="main-content">
+      <div class="content-block bloque1">
+        <h2>Información Académica</h2>
+        <p>Accede a tu historial de cursos, requisitos por ciclo, y plan curricular.</p>
+      </div>
 
-    <footer>
-        <p>&copy;2025 FIEE. Todos los derechos reservados.</p>
-    </footer>
+      <div class="content-block bloque2">
+        <h2>Matrícula Inteligente</h2>
+        <p>Recomendación automática de horarios según tu avance académico y preferencias.</p>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
 
+  </main>
+
+  <footer>
+    <p>&copy;2025 FIEE. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
