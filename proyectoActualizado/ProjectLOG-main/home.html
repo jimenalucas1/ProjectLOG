@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistant - Proyecto Matrícula</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <!--<header>
+    <nav>
+      <h2>Matricula FIEE</h2>
+      <p>Descubre información académica, matrícula inteligente y más.</p>
+      <ul class="nav-links">
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>-->
+
+  <header>
+    <nav>
+      <h2>Matricula FIEE</h2>
+      <p>Descubre información académica, matrícula inteligente y más.</p>
+      <ul class="nav-links">
+        <li><a id="logout-btn" href="#">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-layout">
+    <!-- Chat sidebar -->
+    <aside class="chat-sidebar">
+      <h2>Asistente Virtual</h2>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Escribe tu consulta aquí..." />
+        <button id="send-btn">Enviar</button>
+      </div>
+    </aside>
+
+    <!-- Right sidebar: Navegación secundaria -->
+    <aside class="right-sidebar">
+      <h2>Panel de Navegación</h2>
+        <ul class="sidebar-buttons">
+          <li><button onclick="navigate('info')">Mi Información</button></li>
+          <li><button onclick="navigate('matricula')">Matrícula</button></li>
+          <li><button onclick="navigate('reportes')">Reportes</button></li>
+        <li><button onclick="navigate('plan')">Plan de Estudios</button></li>
+        <li><button onclick="navigate('tutoriales')">Manuales y Tutoriales</button></li>
+        </ul>
+      </aside>
+    
+      <!-- Contenido principal debajo de las barras laterales -->
+    <section class="main-content">
+      <div class="content-block bloque1">
+        <h2>Información Académica</h2>
+        <p>Accede a tu historial de cursos, requisitos por ciclo, y plan curricular.</p>
+      </div>
+
+      <div class="content-block bloque2">
+        <h2>Matrícula Inteligente</h2>
+        <p>Recomendación automática de horarios según tu avance académico y preferencias.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy;2025 FIEE. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
